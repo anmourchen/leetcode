@@ -70,6 +70,8 @@ class Solution:
 3. [785. Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)
    * Hint: Use two colors to mark the visited node. If the next node has been marked as the same color, return false.
 4. [752. Open the Lock](https://leetcode.com/problems/open-the-lock/)
+5. [721. Account Merge](https://leetcode.com/problems/accounts-merge/)
+   * Hint: For every pair of emails in the same account, draw an edge between those emails. The problem is about enumerating the connected components of this graph.
 
 ### Chessboard or matrix
 1. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
