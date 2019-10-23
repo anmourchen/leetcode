@@ -103,3 +103,4 @@ class Solution:
    * Hint: Start from each building and find the distance from the empty space to the building
    * Hint: Record the number of buildings each empty space can reach
    * Hint: Use a 2D array to record the sum of distance from each empty space to every building
+9. [407. Trapping Rain Water II *](https://leetcode.com/problems/trapping-rain-water-ii/)
