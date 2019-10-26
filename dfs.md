@@ -60,25 +60,25 @@ class Solution:
 1. [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
     * Very similar to LC 547, this is the generalization of friend circles in the graph setting.
 2. [547. Friend Circles](https://leetcode.com/problems/friend-circles/)
-3. [841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)
+3. [399. Evaluate Division](https://leetcode.com/problems/evaluate-division/)
+4. [841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)
     * Determine if a graph is a connected component
-4. [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+5. [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
     * A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.
-4. [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+6. [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
    * Hint: Use a hashmap
-5. [332. Reconstruct Itinerary *](https://leetcode.com/problems/reconstruct-itinerary/)
+7. [332. Reconstruct Itinerary *](https://leetcode.com/problems/reconstruct-itinerary/)
     * Sort the children in the graph
     * Post-order traversal and reverse the final result
-6. [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+8. [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
     * Can be solved using DFS (`O(n^2)`, not optimal)
     * Iterate over each edge and check if there is already a path between these two nodes, if `True`, return this edge.
-7. [1192. Critical Connections in a Network *](https://leetcode.com/problems/critical-connections-in-a-network/)
+9. [1192. Critical Connections in a Network *](https://leetcode.com/problems/critical-connections-in-a-network/)
    * depth: the "depth" of each node in the DFS tree. It's the "sequence number" of nodes we visit rather than the actual depth, keep that in mind.
-   * lowest: the lowest (in terms of sequence number/depth) node we can visit though the subtree of the node. This is the key part: if we can visit lower (close to the top) nodes through (parent, child) than parent itself, it means child is accessible in at least
-two routes, and hence (u,v) is not a cricital edge (and vise versa).
-8. [465. Optimal Account Balancing *](https://leetcode.com/problems/optimal-account-balancing/)
-   * Hint: DFS + memorization
-   * Hint: state is the current `assets` and `debts`. Sort them reversely so we want to balanace the highest debts first
+   * lowest: the lowest (in terms of sequence number/depth) node we can visit though the subtree of the node. This is the key part: if we can visit lower (close to the top) nodes through (parent, child) than parent itself, it means child is accessible in at least two routes, and hence (u,v) is not a cricital edge (and vise versa).
+10. [465. Optimal Account Balancing *](https://leetcode.com/problems/optimal-account-balancing/)
+    * Hint: DFS + memorization
+    * Hint: state is the current `assets` and `debts`. Sort them reversely so we want to balanace the highest debts first
 
 ### Topological sorting
 
