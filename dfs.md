@@ -138,6 +138,7 @@ class Solution:
 4. [124. Binary Tree Maximum Path Sum *](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
    * Hint: only root and one child can be used for local maximum
    * Hint: root and both children can be used for global maximum (Cannot pass this result to the root)
+   * Similar problem: [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 5. [366. Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)
 6. [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
    * Hint: Find the maximum between `root.val + grandchildren.val` and `root.left.val + root.right.val`
