@@ -146,7 +146,7 @@ class Solution:
    * Hint: determine the location of the root and then solve recursively
 8. [834. Sum of Distances in Tree *](https://leetcode.com/problems/sum-of-distances-in-tree/)
     * Hint: `res[x] = res[y] - #(X) + N - #(X)` 
-9. [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/)
+9. [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/), [814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)
 
 ### General problems
 

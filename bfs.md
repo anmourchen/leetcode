@@ -30,6 +30,39 @@ class Solution:
         return res
 ```
 
+## Dijkstra Algorithm
+* Commonly used for searching the shortest path with weights in graph problems
+
+```python
+while True:
+    minNode, minDist = -1, float('inf')
+    for i in range(1, N + 1):
+        if not visited[i] and dist[i] < minDist:
+            minNode, minDist = i, dist[i]
+        if minNode < 0:
+            break
+        visited[minNode] = True
+        for v, w in graph[minNode]:
+            dist[v] = min(dist[v], dist[minNode] + w)
+```
+
+* Heap implementation
+
+```python
+heapq.heappush(q, (0, K))
+while q:
+    d, node = heapq.heappop(q)
+    if node in dist and dist[node] <= d:
+        continue
+    dist[node] = d
+    for v, w in graph[node]:
+        heapq.heappush(q, (d + w, v))
+```
+
+* Problems:  
+    * [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/) (Use Dijkstra algorithm to find the maximum travel time for all the nodes)
+    * [505. The Maze II](https://leetcode.com/problems/the-maze-ii/) (Need to use heap version)
+
 ## Related Problems
 **Note**: Most problems can be solved by both BFS and DFS
 
@@ -73,6 +106,7 @@ class Solution:
 5. [721. Account Merge](https://leetcode.com/problems/accounts-merge/)
    * Hint: For every pair of emails in the same account, draw an edge between those emails. The problem is about enumerating the connected components of this graph.
 6. [815. Bus Routes *](https://leetcode.com/problems/bus-routes/)
+7. [403. Frog Jump](https://leetcode.com/problems/frog-jump/)
 
 ### Chessboard or matrix
 1. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
@@ -103,4 +137,5 @@ class Solution:
    * Hint: Start from each building and find the distance from the empty space to the building
    * Hint: Record the number of buildings each empty space can reach
    * Hint: Use a 2D array to record the sum of distance from each empty space to every building
-9. [407. Trapping Rain Water II *](https://leetcode.com/problems/trapping-rain-water-ii/)
+9. [1162. As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/)
+10. [407. Trapping Rain Water II *](https://leetcode.com/problems/trapping-rain-water-ii/)
