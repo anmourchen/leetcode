@@ -196,6 +196,12 @@ class Solution:
    * Hint: Can also solve using dynamic programming
 3. [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
    * Hint: Trie + DFS
+4. Parsing the strings
+   * Usually can be solved using stacks 
+   * [394. Decode String](https://leetcode.com/problems/decode-string/)
+   * [1096. Brace Expansion II*](https://leetcode.com/problems/brace-expansion-ii/)
+   * [772. Basic Calculator III*](https://leetcode.com/problems/basic-calculator-iii/)
+   * [726. Number of Atoms](https://leetcode.com/problems/number-of-atoms/)
 
 ### BFS + DFS problems
 1. [126. Word Ladder II *](https://leetcode.com/problems/word-ladder-ii/)
